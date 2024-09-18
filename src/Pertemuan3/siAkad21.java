@@ -9,10 +9,11 @@ public class siAkad21 {
         String nim;
         char kelas;
         byte absen;
-        double nilaiKuis;
-        double nilaiTugas;
-        double nilaiUjian;
-        double nilaiAkhir;
+        float nilaiKuis;
+        float nilaiTugas;
+        float nilaiUjianUTS;
+        float nilaiUjianUAS;
+        float nilaiAkhir;
 
         // absen = 10;
         // kelas = 'G';
@@ -27,13 +28,15 @@ public class siAkad21 {
         System.err.print("Masukan absen: ");
         absen = sc.nextByte(); 
         System.err.print("Masukan Nilai Tugas: ");
-        nilaiTugas = sc.nextDouble(); 
-        System.err.print("Masukan Nilai Ujian: ");
-        nilaiUjian = sc.nextDouble(); 
+        nilaiTugas = sc.nextFloat() * (15/100); 
+        System.err.print("Masukan Nilai Ujian UTS: ");
+        nilaiUjianUTS = sc.nextFloat() * (30/100);
+        System.err.print("Masukan Nilai Ujian UAS: ");
+        nilaiUjianUAS = sc.nextFloat() * (35/100); 
         System.err.print("Masukan Kuis: ");
-        nilaiKuis = sc.nextDouble();
+        nilaiKuis = sc.nextFloat() * (20/100);
 
-        nilaiAkhir = (nilaiTugas + nilaiKuis + nilaiUjian) / 3;
+        nilaiAkhir = (nilaiTugas + nilaiKuis + nilaiUjianUAS + nilaiUjianUTS) ;
         
         System.err.print("Nama : " + nama + "\nNim" + nim);
         System.err.print("\nKelas : " + kelas + "\nAbsen" + absen);
