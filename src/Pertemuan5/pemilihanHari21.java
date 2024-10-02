@@ -6,26 +6,26 @@ public class pemilihanHari21 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String dayName;
+        int dayName;
         String dayType;
 
         System.out.println("input day name");
-        dayName = sc.nextLine();
+        dayName = sc.nextInt();
 
-        switch (dayName.toLowerCase()) {
-            case "monday":
-            case "tuesday":
-            case "wednesday":
-            case "thursday":
-            case "friday":
+        switch (dayName) {
+            case 1 :
+            case 2:
+            case 3:
+            case 4:
+            case 5:
             dayType = "weekday";
                 break;
-            case "saturday":
-            case "sunday":
+            case 6:
+            case 7:
             dayType = "weekend";
                 break;
                 default :
-            dayType = "other";
+            dayType = "Invalid number";
                 return;
         }
         System.out.println("day type : " + dayType);
