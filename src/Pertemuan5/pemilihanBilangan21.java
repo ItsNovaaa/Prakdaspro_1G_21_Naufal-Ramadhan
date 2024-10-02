@@ -7,15 +7,19 @@ public class pemilihanBilangan21 {
         
         Scanner sc = new Scanner(System.in);
         int angka ;
-
+        String hasil;
         System.err.print("Masukkan Angka : ");
         angka = sc.nextInt();
 
-        if (angka % 2 == 0) {
-            System.err.print("Angka " + angka + " Bilangan genap");
-        } else {
-            System.err.print("Angka " + angka + " Bilangan Ganjil");
-        }
+        hasil = (angka % 2 == 0) ? " Bilangan Genap" : " Bilangan Ganjil";
+        
+        System.out.println("Angka " + angka + hasil);
+
+        // if (angka % 2 == 0) {
+        //     System.err.print("Angka " + angka + " Bilangan genap");
+        // } else {
+        //     System.err.print("Angka " + angka + " Bilangan Ganjil");
+        // }
     }
 
 
