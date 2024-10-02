@@ -30,7 +30,7 @@ public class pemilihanSwitch21 {
                 hasil = angka1 / angka2;
                 break;
             default:
-                System.out.println("Operator tidak ditemukan");
+                System.out.println("Operator tidak ditemukan"); 
                 return;
             }
         System.out.print(angka1 + " " + operator + " " + angka2 + " = " + hasil);
