@@ -2,11 +2,11 @@ package Pertemuan5;
 
 import java.util.Scanner;
 
-public class pemilihanSwitch21 {
+public class pemilihanOperator21 {
     public static void main(String[] args) {
         Scanner Sc = new Scanner(System.in);
 
-        double angka1, angka2, hasil;
+        double angka1, angka2, hasil = 0;
         char operator;
 
         System.out.println("Masukkan Angka 1:");
@@ -18,7 +18,7 @@ public class pemilihanSwitch21 {
 
         if (operator == '+') {
             hasil = angka1 + angka2;
-            
+
         } else if (operator == '-') {
             hasil = angka1 - angka2;
             
@@ -30,7 +30,7 @@ public class pemilihanSwitch21 {
             
         } else {
             System.out.println("Operator tidak ditemukan");
-        }
+        } 
         System.out.print(angka1 + " " + operator + " " + angka2 + " = " + hasil);
             
     }
