@@ -7,6 +7,7 @@ public class pemilihan2percobaan221 {
         Scanner input21 = new Scanner(System.in);
 
         String member;
+        String Pembayaran;
         int pilihan_menu;
         double nilaiBayar;
         double diskon;
@@ -21,13 +22,13 @@ public class pemilihan2percobaan221 {
         System.out.println("----------------------------------");
         System.out.print("Masukkan angka dari menu yang dipilih = ");
         pilihan_menu = input21.nextInt();
-        input21.nextLine(); // membersihkan newline dari input sebelumnya
+        input21.nextLine(); 
         System.out.print("Apakah punya member (y/n) ? = ");
         member = input21.nextLine();
         System.out.println("----------------------------------");
 
         // Memeriksa apakah user adalah member
-        if (member.equalsIgnoreCase("y")) {
+        if (member.equals("y")) {
             diskon = 0.10;
             System.out.println("Diskon 10%");
 
@@ -46,13 +47,18 @@ public class pemilihan2percobaan221 {
                 return;
             }
 
-            // Menghitung nilai bayar setelah diskon
-            nilaiBayar = harga - (harga * diskon);
-            System.out.println("Total Bayar setelah diskon : " + nilaiBayar);
-
-        } 
+            System.out.println("Menggunakan qris (y/n) ? =");
+            Pembayaran = input21.nextLine();
+            if  (Pembayaran.equals("y")) {
+                nilaiBayar = harga - (harga * diskon) - 1000;
+                System.out.println("Total Bayar setelah diskon : " + nilaiBayar );
+            } else {
+                nilaiBayar = harga - (harga * diskon);
+                System.out.println("Total Bayar setelah diskon : " + nilaiBayar );
+            }
+        }
         // Jika bukan member
-        else if (member.equalsIgnoreCase("n")) {
+        else if (member.equals("n")) {
             if (pilihan_menu == 1) {
                 harga = 14000;
                 System.out.println("Harga Ricebowl : " + harga);
@@ -66,9 +72,17 @@ public class pemilihan2percobaan221 {
                 System.out.println("Pilihan menu tidak tersedia");
                 return;
             }
-            // Menghitung nilai bayar tanpa diskon
-            nilaiBayar = harga;
-            System.out.println("Total Bayar : " + nilaiBayar);
+
+            System.out.print("Menggunakan qris");
+            Pembayaran = input21.nextLine();
+            if  (Pembayaran.equals("y")) {
+                nilaiBayar = harga - 1000;
+                System.out.println("Total Bayar setelah diskon : " + nilaiBayar);
+            } else {
+                nilaiBayar = harga ;
+                System.out.println("Total Bayar setelah diskon : " + nilaiBayar);
+            }
+
         }
         else {
             System.out.println("Input tidak valid, silakan masukkan y atau n untuk status member.");
