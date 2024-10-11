@@ -22,6 +22,7 @@ public class pertemuan7Percobaan2 {
 
             if (nilai > 80 && nilai <= 100) {
                 System.out.println("Mahasiswa " + (i+1) + " bernilai A");
+                System.out.println("Pertahankan Prestasi");
             } else if (nilai >73 && nilai <= 80) {
                 System.out.println("Mahasiswa " + (i+1) + " bernilai B");
             } else if (nilai > 65 && nilai <= 73) {
