@@ -14,12 +14,12 @@ public class tugas1 {
         double bayar;
 
         System.out.println("Masukkan Jenis tiket : ");
-        jumlahTiket = input.nextInt();
+        Jenistiket = input.nextInt();
 
-        while ( i < jumlahTiket) {
+        while ( i < Jenistiket) {
             System.out.println("Berapa jenis tiket yg dihitung");
-            Jenistiket = input.nextInt();
-            if (Jenistiket < 0 ) {
+            jumlahTiket = input.nextInt();
+            if (jumlahTiket < 0 ) {
                 System.out.println("Tidak boleh 0");
                 continue;
             }
