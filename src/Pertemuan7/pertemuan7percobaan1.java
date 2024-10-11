@@ -7,6 +7,7 @@ public class pertemuan7percobaan1 {
         Scanner input = new Scanner(System.in);
 
         double nilai;
+        double tidakLulus = 0;
         double tertinggi = 0;
         double terendah = 100;
 
@@ -19,8 +20,12 @@ public class pertemuan7percobaan1 {
             if (nilai < terendah) {
                 terendah = nilai;
             }
+            if (nilai < 60){
+                tidakLulus++;
+            }
         }
         System.out.println("Mahasiswa nilai tertinggi : " + tertinggi);
+        System.out.println("Mahasiswa nilai tertinggi : " + tidakLulus);
         System.out.println("Mahasiswa nilai terendah : " + terendah);
     }
 }
