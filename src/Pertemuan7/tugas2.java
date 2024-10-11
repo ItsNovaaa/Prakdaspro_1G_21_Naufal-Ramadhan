@@ -7,20 +7,30 @@ public class tugas2 {
 
         int jenis;
         int durasi;
-        int total;
+        int total = 0;
 
-        System.out.println("Masukkan jenis : ");
-        jenis = input.nextInt();
-
+        
         do { 
-            if(jenis == 1) {
+            System.out.println("Masukkan jenis : ");
+            jenis = input.nextInt();
+            if(jenis == 1 || jenis == 2) {
+                System.err.println("Masukkan Durasi");
                 durasi = input.nextInt();
-                if (durasi) {
-                    
-                }
-            }
+                if (durasi > 5 ) {
+                    total += 12500;
+                    System.err.println("Print Total : " + total);
+                } else if (jenis == 1 ) {
+                    total += durasi * 3000;
+                    System.err.println("Print Total : " + total);
 
-            
+                } else if (jenis == 2) {
+                    total += durasi * 2000;
+                    System.err.println("Print Total : " + total);
+                }
+            } else if (jenis == 0) {
+                System.err.println("Transaksi Selesai");
+                break;
+            }
         } while (true);
     }
 }
