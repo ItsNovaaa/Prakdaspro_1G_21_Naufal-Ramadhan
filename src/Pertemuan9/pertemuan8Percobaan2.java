@@ -6,7 +6,7 @@ public class pertemuan8Percobaan2 {
         System.out.println("Masukkan nilai N : ");
         int N = input.nextInt();
         for(int i=1; i<=N;){
-            for(int j=1; j<=N;){
+            for(int j=0; j<=N;){
                 System.out.print("*");
                 j++;
             }
