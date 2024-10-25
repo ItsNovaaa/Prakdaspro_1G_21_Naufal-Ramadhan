@@ -1,4 +1,4 @@
-package Pertemuan8;
+package Pertemuan9;
 import java.util.Scanner;
 public class pertemuan8Percobaan1 {
     public static void main(String[] args) {
