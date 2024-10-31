@@ -1,6 +1,6 @@
 package Pertemuan10;
 
-public class ArrayBilangan01 {
+public class ArrayBilangan21 {
     public static void main(String[] args) {
         int[] angka = {5, 13, -7, 17} ;     // new int[4];
         // angka[0] = 5;
