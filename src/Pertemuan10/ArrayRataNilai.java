@@ -9,6 +9,10 @@ public class ArrayRataNilai {
         double rata;
         int lulus =0 ;
         int input;
+        double nilaiLulus = 0;
+        double nilaiTidakLulus = 0;
+        double ratalulus;
+        double rataTidakLulus;
         System.out.println("Masukkan Berpabanyak Mahasiswa");
         input = sc.nextInt();
         
@@ -20,11 +24,19 @@ public class ArrayRataNilai {
         for(int i =0; i < nilaiMahasiswa.length;i++){
             total += nilaiMahasiswa[i] ;
             if (nilaiMahasiswa[i] > 70) {
+                nilaiLulus += nilaiMahasiswa[i];
                 lulus++;
+            } else {
+                nilaiTidakLulus += nilaiMahasiswa[i];
             }
         }
+
         rata = total/nilaiMahasiswa.length;
+        ratalulus = nilaiLulus / nilaiMahasiswa.length;
+        rataTidakLulus = nilaiTidakLulus / nilaiMahasiswa.length;
         System.out.println("lulus : " + lulus);
         System.out.println("Rata Rata Nilai Mahasiswa" + rata);
+        System.out.println("Rata Rata Nilai Lulus Mahasiswa" + ratalulus);
+        System.out.println("Rata Rata Nilai Tidak Lulus Mahasiswa" + rataTidakLulus );
     }
 }
