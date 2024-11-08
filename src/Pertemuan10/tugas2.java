@@ -24,7 +24,7 @@ public class tugas2 {
 
         
         for(int i = 0; i < totalPesanan; i++) {
-            totalHarga += harga[i] * totalPesanan;
+            totalHarga += harga[i] * totalPesanan;  
         }
 
         for (int i = 0; i < totalPesanan; i++) {
