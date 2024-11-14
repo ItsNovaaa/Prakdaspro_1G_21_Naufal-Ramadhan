@@ -5,7 +5,15 @@ import java.util.Scanner;
 public class siakad21 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int[][] nilai = new int [4][3];
+        int baris;
+        int kolom;
+
+        System.out.println("masukkan baris");
+        baris = scanner.nextInt();
+        System.out.println("masukkan kolom");
+        kolom = scanner.nextInt();
+        
+        int[][] nilai = new int [baris][kolom];
         for (int i = 0; i < nilai.length; i++) {
             System.out.println("input nilai mahasiswa ke-" + (i+1));
             double totalPersiswa = 0;
