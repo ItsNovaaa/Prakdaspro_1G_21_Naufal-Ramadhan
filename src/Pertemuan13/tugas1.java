@@ -15,8 +15,6 @@ public class tugas1 {
         volume = volume(s);
         System.out.println("Volume = "+volume);  
         System.out.println("Luas = " + luasPermukaan);
-
-
     }
 
     public static int luasPersegi(int s) {
