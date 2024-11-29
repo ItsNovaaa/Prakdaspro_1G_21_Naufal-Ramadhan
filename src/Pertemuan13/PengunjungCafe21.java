@@ -7,8 +7,13 @@ public class PengunjungCafe21 {
     
     public static void daftarPengunjung(String... namaPengunjung) {
         System.out.println("Daftar Pengunjung Cafe:");
-        for (int i = 0; i < namaPengunjung.length; i++) {
-            System.out.println("-" + namaPengunjung[i]);
+        for (String data : namaPengunjung) {
+            System.out.println(data);
         }
+        // for (int i = 0; i < namaPengunjung.length; i++) {
+        //     System.out.println("-" + namaPengunjung[i]);
+        // }
+
+
     }
 }
