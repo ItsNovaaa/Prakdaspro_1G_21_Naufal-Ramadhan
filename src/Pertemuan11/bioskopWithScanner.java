@@ -34,7 +34,7 @@ public class bioskopWithScanner {
                         continue;
                     }
 
-                    if (penonton[baris-1][kolom-1] != null) {
+                    if (penonton[baris-1][kolom-1] == null) {
                         penonton[baris-1][kolom-1] = nama;
                     } else {
                         System.out.println("Sudah Terpakai");
