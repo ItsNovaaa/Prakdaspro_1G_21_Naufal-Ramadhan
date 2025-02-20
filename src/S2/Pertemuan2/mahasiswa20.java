@@ -20,7 +20,6 @@ public class mahasiswa20 {
             if (ipkBaru >= 0.0 && ipkBaru <= 4.0) {
                 ipk = ipkBaru;
             }
-            // ipk = ipkBaru;
         }
         String nilaiKinerja () {
             if (ipk >= 3.5) {
