@@ -1,11 +1,21 @@
 package S2.Pertemuan2;
 
-public class mahasiswa20 {
-    class Mahasiswa {
+public class Mahasiswa20 {
         String nama;
         String nim;
         String kelas;
         double ipk;
+
+        public Mahasiswa20 () {
+
+        }
+
+        public Mahasiswa20 (String nm, String nim, String kls, double ipk) {
+            nama = nm;
+            this.nim = nim;
+            this.ipk = ipk;
+            kelas = kls;
+        }
         
         void tampilkanInformasi () {
             System.out.println("Nama Mahasiswa : " + nama);
@@ -16,7 +26,7 @@ public class mahasiswa20 {
         void ubahKelas (String kelasBaru) {
             kelas = kelasBaru;
         }
-        void ubahIpk (double ipkBaru) {
+        void updateIpk (double ipkBaru) {
             if (ipkBaru >= 0.0 && ipkBaru <= 4.0) {
                 ipk = ipkBaru;
             }
@@ -38,4 +48,4 @@ public class mahasiswa20 {
         }
     }
     
-}
+
