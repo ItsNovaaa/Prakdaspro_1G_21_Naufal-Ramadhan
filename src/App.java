@@ -3,3 +3,4 @@ public class App {
         System.out.println("Hello, World!");
     }
 }
+// class 3 att 2 method untuk resto
