@@ -57,6 +57,22 @@ public class StackTugasMahasiswa {
         }
     }
 
+    public Mahasiswa seeFirst() {
+        if (!isEmpty()) {
+            return stack[0];
+        } else {
+            System.out.println("Stack kosong! Tidak ada tugas yang dikumpulkan");
+            return null;
+        }
+    }
+
+    public void count() {
+        if (!isEmpty()) {
+            System.out.println("Jumlah tugas yang dikumpulkan: " + (top + 1));
+        } else {
+            System.out.println("Stack kosong! Tidak ada tugas yang dikumpulkan");
+        }
+    }
 
 
     public void print() {
